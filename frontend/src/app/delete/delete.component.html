@@ -1,0 +1,32 @@
+<div>
+    <div>
+      <span class="head"> Employee </span>
+    </div>
+    <table class="center">
+      <thead>
+        <tr>
+          <th scope="col">Employee ID</th>
+          <th scope="col">Employee DOB</th>
+          <th scope="col">Employee Email</th>
+          <th scope="col">Employee Fname</th>
+          <th scope="col">Employee Lname</th>
+          <th scope="col">Delete Employee</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr *ngFor="let employee of employee">
+          <td scope="row">{{ employee.emp_id }}</td>
+          <td>{{ employee.emp_dob }}</td>
+          <td>{{ employee.emp_email }}</td>
+          <td>{{ employee.emp_fname }}</td>
+          <td>{{ employee.emp_lname }}</td>
+          <td>
+            <button (click)="deleteEmployee(employee)" class="btn btn-danger">
+              Delete
+            </button>
+          </td>
+        </tr>
+        </tbody>
+        </table>
+        </div>

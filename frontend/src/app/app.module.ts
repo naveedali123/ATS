@@ -13,6 +13,7 @@ import { SearchComponent } from './search/search.component';
 import { AttendanceComponent } from './attendance/attendance.component';
 import { CheckOutComponent } from './check-out/check-out.component';
 import { LoginComponent } from './login/login.component';
+import { DeleteComponent } from './delete/delete.component';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import { LoginComponent } from './login/login.component';
     AttendanceComponent,
     CheckOutComponent,
     LoginComponent,
+    DeleteComponent,
   
   ],
   imports: [
