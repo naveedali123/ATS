@@ -1,18 +1,18 @@
 <html>
-<head>
-    <link rel="stylesheet" href="login.component.css">
-</head>
-<body>
-    <div class="login-form">
-        <h1>Admin login</h1>
-        <form>
-            <p>User Name:</p>
-            <input type="text" name="hremail" placeholder="useremail">
-            <p>User Password:</p>
-            <input type="text" name="hrpassword" placeholder="user Password">
-            <button type="submit">Login</button>
-        </form>
-    </div>
-</body>
-
+    <head>
+        <link rel="stylesheet" href="login.component.css">
+    </head>
+    <body>
+        <div class="login-form">
+            <h1>Admin login</h1>
+            <form action="" [formGroup]="loginForm" (ngSubmit)="validateAdmin()">
+                <p>User Name:</p>
+                <input type="text" name="hremail" placeholder="useremail" formControlName="hremail">
+                <p>User Password:</p>
+                <input type="text" name="hrpassword" placeholder="user Password" formControlName="hrpassword">
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </body>
 </html>
+   
