@@ -11,6 +11,7 @@ import { LoginComponent } from './login/login.component';
 import { SearchComponent } from './search/search.component';
 
 const routes: Routes = [
+  { path: '', component: LoginComponent },
   {path:'login',component:LoginComponent},
   {path: 'employee',component:EmployeeComponent},
   {path: 'landing-page',component:LandingPageComponent},

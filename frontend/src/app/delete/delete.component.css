@@ -1,10 +1,10 @@
-.home-page {
+/*.home-page {
     font-family: GlacialIndifference;
-   /* background-image: url("../../images/background-image.png");*/
+    background-image: url("../../images/background-image.png");
     width: 100%;
     height: 1024px;
     background-size: cover;
-  }
+  }*/
   
   .view-customer-div {
     display: flex;

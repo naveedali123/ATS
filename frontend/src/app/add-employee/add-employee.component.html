@@ -1,25 +1,56 @@
-<div class="container">
-    <body>
+<div class="registration-form-card">
+  <div class="title">Registration</div>
+  <h1>Employee Registration</h1>
+  <div class="content">
+    <form (ngSubmit)="registerEmployee()" [formGroup]="registerForm" >
+      <div class="user-details">
+        <div class="input-box">
+          <span class="details">Employee DOB</span>
+          <input
+            type="text"
+            name="emp_dob"
+            formControlName="emp_dob"
+            placeholder="YYYY-MM-DD"
+          />
+          <br />
+        </div>
+        <div class="input-box">
+          <span class="details">Employee Email</span>
+          <input
+            type="email"
+            name="emp_email"
+            formControlName="emp_email"
+            placeholder="email"
+          />
+          <br />
+        </div>
+        <div class="input-box">
+          <span class="details">Customer First name</span>
+          <input
+            type="text"
+            placeholder="First Name"
+            name="emp_fname"
+            formControlName="emp_fname"
+          />
+          <br />
+        </div>
+        <div class="input-box">
+          <span class="details">Customer Last name</span>
+          <input
+            name="emp_lname"
+            formControlName="emp_lname"
+            placeholder="Last Name..."
+            type="text"
+          />
+          <br />
+        </div>
+      </div>
 
-        <h1>Enter employee details</h1>
-        
-        <form action="/action_page.php">
-    
-          <label for="fname">Employee number:</label>
-          <input type="text" id="employeeid" name="employeeid"><br><br>
-          <label for="fname">Employee name:</label>
-          <input type="text" id="ename" name="ename"><br><br>
-          <label for="fname">Email:</label>
-          <input type="text" id="ename" name="ename"><br><br>
-          <label for="fname">Date of birth:</label>
-          <input type="text" id="ename" name="ename"><br><br>
-          
-            <input type="submit" value="Submit">
-        </form>
-
-        
-        </body>
+      <div>
+        <Button type="primary" class="registration-form-submit-button">
+          SUBMIT
+        </Button>
+      </div>
+    </form>
+  </div>
 </div>
-  
-  
-  

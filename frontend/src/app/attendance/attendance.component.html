@@ -1,17 +1,25 @@
-<div class="container">
-    <body>
-
-        <h1>Attendance Check_in</h1>
-                <form action="/action_page.php">
-    
-            <label for="fname">Enter employee ID:</label>
-          <input type="text" id="employeeid" name="employeeid"><br><br>
-          <!-- <label for="fname">Employee name:</label>
-          <input type="text" id="ename" name="ename"><br><br> -->
+<div class="registration-form-card">
+  <div class="title">Registration</div>
+  <h1>Employee Check_in</h1>
+  <div class="content">
+    <form (ngSubmit)="registercheckin()" [formGroup]="checkinForm" >
+      <div class="user-details">
+        <div class="input-box">
+          <span class="details">Employee ID</span>
+          <input
+            type="number"
+            name="emp_id"
+            formControlName="emp_id"
+            placeholder="Employee ID"
+          />
+          </div>
+          </div>
+          <div>
+            <Button type="primary" class="registration-form-submit-button">
+              SUBMIT
+            </Button>
+          </div>
+          </form>
+          </div>
+          </div>
           
-            <input type="submit" value="Submit">
-        </form>
-
-        
-        </body>
-</div>
